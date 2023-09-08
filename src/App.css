@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    overflow-y: hidden;
+}
+div {
+    display: block;
+}
+.Main {
+    text-align: center;
+}
+
+.Main-spin {
+    height: 40vmin;
+    pointer-events: none;
+    color: black;
+    margin-bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .Main-spin {
+        animation: Main-spin infinite 20s linear;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Main-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px + 2vmin);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes Main-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outer {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.outer::-webkit-scrollbar {
+    display: none;
+}
+
+.inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.bg-yellow {
+    background-color: #f7f6cf;
+}
+
+.bg-blue {
+    background-color: #b6d8f2;
+}
+
+.bg-pink {
+    background-color: #f4cfdf;
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+}
+
+#scroll_down {
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    transform: translateX(-50%);
+    user-select: none;
+}
+
+#scroll_down #mouse::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#scroll_down #mouse::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: MoveArrow 1s ease-in-out infinite;
+}
+
+#scroll_down #scroll_txt {
+    color: black;
+    animation: MoveText 1s ease-in-out infinite alternate;
 }
