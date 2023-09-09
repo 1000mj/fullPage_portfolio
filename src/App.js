@@ -93,10 +93,6 @@ function App() {
                         <div className="Main-spin">Welcome to my portfolio</div>
                         <p>프론트엔드 개발자 천명진입니다.</p>
                     </header>
-                    <div id="scroll_down">
-                        <div id="mouse"></div>
-                        <div id="scroll_txt"></div>
-                    </div>
                 </div>
             </div>
             <div className="divider"></div>

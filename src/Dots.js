@@ -1,10 +1,11 @@
 const Dot = ({ num, scrollIndex }) => {
     return (
         <div
+            className="dotHover"
             style={{
                 width: 10,
                 height: 10,
-                border: '1px solid black',
+                border: '2px solid black',
                 borderRadius: 999,
                 backgroundColor: scrollIndex === num ? 'black' : 'transparent',
                 transitionDuration: 1000,
@@ -28,6 +29,7 @@ const Dots = ({ scrollIndex }) => {
                 <Dot num={1} scrollIndex={scrollIndex}></Dot>
                 <Dot num={2} scrollIndex={scrollIndex}></Dot>
                 <Dot num={3} scrollIndex={scrollIndex}></Dot>
+                <Dot num={4} scrollIndex={scrollIndex}></Dot>
             </div>
         </div>
     );

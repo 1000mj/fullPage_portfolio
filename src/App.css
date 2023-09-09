@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'neurimboGothicRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,18 +22,9 @@ div {
     text-align: center;
 }
 
-.Main-spin {
-    height: 40vmin;
-    pointer-events: none;
-    color: black;
-    margin-bottom: 100px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
 @media (prefers-reduced-motion: no-preference) {
     .Main-spin {
-        animation: Main-spin infinite 20s linear;
+        animation: Main-spin infinite 10s linear;
     }
 }
 
@@ -35,10 +34,19 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(12px + 2vmin);
+    font-size: calc(20px + 2vmin);
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'neurimboGothicRegular';
+}
+
+.Main-spin {
+    height: 40vmin;
+    pointer-events: none;
+    color: black;
+    margin-bottom: 100px;
+    font-family: 'neurimboGothicRegular';
     font-weight: bold;
+    font-size: calc(12px + 2vmin);
 }
 
 @keyframes Main-spin {
@@ -85,41 +93,6 @@ div {
     background-color: gray;
 }
 
-#scroll_down {
-    position: absolute;
-    left: 50%;
-    bottom: 55px;
-    transform: translateX(-50%);
-    user-select: none;
-}
-
-#scroll_down #mouse::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-#scroll_down #mouse::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
-    border-top: transparent;
-    border-left: transparent;
-    animation: MoveArrow 1s ease-in-out infinite;
-}
-
-#scroll_down #scroll_txt {
-    color: black;
-    animation: MoveText 1s ease-in-out infinite alternate;
+.dotHover:hover {
+    background-color: black;
 }
