@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 
 import Dots from './Dots';
+import ToggleButtonGroupUncontrolled from './ToggleButtonGroupUncontrolled';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
@@ -96,9 +98,13 @@ function App() {
                 </div>
             </div>
             <div className="divider"></div>
-            <div className="inner bg-blue">2</div>
+            <div className="skills bg-blue"></div>
             <div className="divider"></div>
-            <div className="inner bg-pink">3</div>
+            <div className="inner bg-pink">
+                <div className="btn-container">
+                    <ToggleButtonGroupUncontrolled />
+                </div>
+            </div>
         </div>
     );
 }

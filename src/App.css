@@ -96,3 +96,34 @@ div {
 .dotHover:hover {
     background-color: black;
 }
+
+.q2 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.skills {
+    display: flex;
+    height: 100vh;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-front {
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+.btn-learn {
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+.btn-etc {
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
