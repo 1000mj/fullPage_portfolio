@@ -68,7 +68,7 @@ function App() {
                         behavior: 'smooth',
                     });
                     setScrollIndex(1);
-                } else {
+                } else if (scrollTop >= pageHeight && scrollTop < pageHeight * 3) {
                     // 현재 3페이지
                     console.log('현재 3페이지, up');
                     outerDivRef.current.scrollTo({
@@ -98,13 +98,15 @@ function App() {
                 </div>
             </div>
             <div className="divider"></div>
-            <div className="skills bg-blue"></div>
-            <div className="divider"></div>
-            <div className="inner bg-pink">
-                <div className="btn-container">
-                    <ToggleButtonGroupUncontrolled />
+            <div className="skills">
+                <div className="skills-btn-container">
+                    <button className="skills-btn">Front-end</button>
+                    <button className="skills-btn">Learning</button>
+                    <button className="skills-btn">etc...</button>
                 </div>
             </div>
+            <div className="divider"></div>
+            <div className="inner "></div>
         </div>
     );
 }

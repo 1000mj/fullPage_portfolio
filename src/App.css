@@ -18,6 +18,7 @@ body {
 div {
     display: block;
 }
+
 .Main {
     text-align: center;
 }
@@ -93,10 +94,6 @@ div {
     background-color: gray;
 }
 
-.dotHover:hover {
-    background-color: black;
-}
-
 .q2 {
     width: 100px;
     height: 100px;
@@ -106,24 +103,20 @@ div {
 .skills {
     display: flex;
     height: 100vh;
+    background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
-
-.btn-container {
-    display: flex;
+.skills-btn-container {
+    margin: 110px auto;
 }
-
-.btn-front {
-    width: 200px;
-    height: 45px;
+button {
+    background-color: white;
+    color: black;
     font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.btn-learn {
-    width: 200px;
-    height: 45px;
-    font-weight: bold;
-}
-.btn-etc {
-    width: 200px;
-    height: 45px;
-    font-weight: bold;
+button:hover {
+    background-color: #0056b3;
 }
