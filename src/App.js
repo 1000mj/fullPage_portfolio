@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
 import Dots from './Dots';
-import ToggleButtonGroupUncontrolled from './ToggleButtonGroupUncontrolled';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -86,6 +85,7 @@ function App() {
             outerDivRefCurrent.removeEventListener('wheel', wheelHandler);
         };
     }, []);
+
     return (
         <div ref={outerDivRef} className="outer">
             <Dots scrollIndex={scrollIndex} />
