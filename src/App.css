@@ -107,6 +107,7 @@ div {
 }
 .skills-btn-container {
     margin: 110px auto;
+    height: 50px;
 }
 button {
     background-color: white;
@@ -115,8 +116,10 @@ button {
     border-radius: 5px;
     padding: 10px 30px;
     cursor: pointer;
-    transition: background-color 0.4s ease;
 }
 button:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to bottom, LightSlateGray, silver);
+}
+
+.inner {
 }
