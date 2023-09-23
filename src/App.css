@@ -14,6 +14,7 @@
 body {
     margin: 0;
     overflow-y: hidden;
+    background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
 div {
     display: block;
@@ -103,7 +104,6 @@ div {
 .skills {
     display: flex;
     height: 100vh;
-    background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
 .skills-btn-container {
     margin: 110px auto;
@@ -121,5 +121,46 @@ button:hover {
     background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
 
-.inner {
+.scroll-downs {
+    position: relative;
+    bottom: 150px;
+    margin: 0 auto;
+    width: 34px;
+    height: 55px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 25px;
+    opacity: 0.85;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 4px;
+    height: 13px;
+    border-radius: 25%;
+    background-color: white;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+.scroll_down {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }

@@ -87,27 +87,34 @@ function App() {
     }, []);
 
     return (
-        <div ref={outerDivRef} className="outer">
-            <Dots scrollIndex={scrollIndex} />
-            <div className="inner bg-yellow">
-                <div className="Main">
-                    <header className="Main-header">
-                        <div className="Main-spin">Welcome to my portfolio</div>
-                        <p>프론트엔드 개발자 천명진입니다.</p>
-                    </header>
+        <>
+            <div ref={outerDivRef} className="outer">
+                <Dots scrollIndex={scrollIndex} />
+                <div className="inner">
+                    <div className="Main">
+                        <header className="Main-header">
+                            <div className="Main-spin">Welcome to my portfolio</div>
+                            <p>프론트엔드 개발자 천명진입니다.</p>
+                        </header>
+                    </div>
                 </div>
-            </div>
-            <div className="divider"></div>
-            <div className="skills">
-                <div className="skills-btn-container">
-                    <button className="skills-btn">Front-end</button>
-                    <button className="skills-btn">Learning</button>
-                    <button className="skills-btn">etc...</button>
+
+                <div class="scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                    <h2 className="scroll_down">scroll down</h2>
                 </div>
+                <div className="skills">
+                    <div className="skills-btn-container">
+                        <button className="skills-btn">Front-end</button>
+                        <button className="skills-btn">Learning</button>
+                        <button className="skills-btn">etc...</button>
+                    </div>
+                </div>
+                <div className="inner "></div>
             </div>
-            <div className="divider"></div>
-            <div className="inner "></div>
-        </div>
+        </>
     );
 }
 
