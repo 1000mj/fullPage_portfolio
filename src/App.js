@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 import Dots from './Dots';
+import SkillsApp from './SkillsApp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -105,14 +106,10 @@ function App() {
                     </div>
                     <h2 className="scroll_down">scroll down</h2>
                 </div>
-                <div className="skills">
-                    <div className="skills-btn-container">
-                        <button className="skills-btn">Front-end</button>
-                        <button className="skills-btn">Learning</button>
-                        <button className="skills-btn">etc...</button>
-                    </div>
-                </div>
-                <div className="inner "></div>
+
+                <SkillsApp />
+
+                <div className="project "></div>
             </div>
         </>
     );

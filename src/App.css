@@ -69,7 +69,7 @@ div {
     display: none;
 }
 
-.inner {
+.project {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -109,15 +109,16 @@ div {
     margin: 110px auto;
     height: 50px;
 }
-button {
+.skills-btn {
     background-color: white;
     color: black;
     font-weight: bold;
     border-radius: 5px;
     padding: 10px 30px;
     cursor: pointer;
+    margin-right: 20px;
 }
-button:hover {
+.skills-btn:hover {
     background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
 
@@ -134,7 +135,7 @@ button:hover {
     height: 35px;
     border: 3px solid white;
     border-radius: 25px;
-    opacity: 0.85;
+    opacity: 0.55;
     box-sizing: content-box;
 }
 .scroller {
