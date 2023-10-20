@@ -40,6 +40,28 @@ div {
     color: black;
     font-family: 'neurimboGothicRegular';
 }
+.Main-header h1 {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #b6d8f2, black, #b6d8f2);
+    animation: animate 20s linear infinite;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animate {
+    from {
+        background-position: -1000%;
+    }
+
+    to {
+        background-position: 1000%;
+    }
+}
 
 .Main-spin {
     height: 40vmin;

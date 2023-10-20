@@ -95,7 +95,7 @@ function App() {
                     <div className="Main">
                         <header className="Main-header">
                             <div className="Main-spin">Welcome to my portfolio</div>
-                            <p>프론트엔드 개발자 천명진입니다.</p>
+                            <h1>프론트엔드 개발자 천명진입니다.</h1>
                         </header>
                     </div>
                 </div>
