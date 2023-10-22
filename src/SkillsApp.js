@@ -24,9 +24,43 @@ function SkillsApp() {
             </div>
             {selectedSkill && (
                 <div className="skill-element">
-                    {selectedSkill === 'front-end' && <p>1</p>}
-                    {selectedSkill === 'learning' && <p>2</p>}
-                    {selectedSkill === 'etc' && <p>3</p>}
+                    {selectedSkill === 'front-end' && (
+                        <p>
+                            :HTML
+                            <br />
+                            :CSS
+                            <br />
+                            :JavaScript
+                            <br />
+                            :React
+                            <br />
+                            :Jquery
+                            <br />
+                            :Bootstrap
+                            <br />
+                            :Tailwindcss
+                        </p>
+                    )}
+                    {selectedSkill === 'learning' && (
+                        <p>
+                            :TypeScript
+                            <br />
+                            :Redux
+                            <br />
+                            :Java
+                            <br />
+                            :Next.js
+                            <br />
+                            :Python
+                        </p>
+                    )}
+                    {selectedSkill === 'etc' && (
+                        <p>
+                            :Github
+                            <br />
+                            :Git
+                        </p>
+                    )}
                 </div>
             )}
         </div>

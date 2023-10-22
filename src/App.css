@@ -124,12 +124,14 @@ div {
 }
 
 .skills {
-    display: flex;
+    display: grid;
+
     height: 100vh;
 }
 .skills-btn-container {
-    margin: 110px auto;
-    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    height: 60px;
 }
 .skills-btn {
     background-color: white;
@@ -142,6 +144,15 @@ div {
 }
 .skills-btn:hover {
     background-image: linear-gradient(to bottom, LightSlateGray, silver);
+}
+.skill-element {
+}
+.skill-element p {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0;
+    left: 90%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .scroll-downs {

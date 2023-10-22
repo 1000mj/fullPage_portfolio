@@ -106,7 +106,6 @@ function App() {
                     </div>
                     <h2 className="scroll_down">scroll down</h2>
                 </div>
-
                 <SkillsApp />
 
                 <div className="project "></div>
