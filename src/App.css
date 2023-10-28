@@ -145,6 +145,9 @@ div {
 .skills-btn:hover {
     background-image: linear-gradient(to bottom, LightSlateGray, silver);
 }
+.clicked {
+    background-image: linear-gradient(to bottom, LightSlateGray, silver);
+}
 .skill-element {
 }
 .skill-element p {
