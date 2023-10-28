@@ -108,7 +108,7 @@ function App() {
                 </div>
                 <SkillsApp />
 
-                <div className="project "></div>
+                <div className="project ">프로젝트 캐러셀</div>
             </div>
         </>
     );
