@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
+import Carousel from './Carousel';
 import Dots from './Dots';
 import SkillsApp from './SkillsApp';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -108,7 +109,9 @@ function App() {
                 </div>
                 <SkillsApp />
 
-                <div className="project ">프로젝트 캐러셀</div>
+                <div className="project ">
+                    <Carousel />
+                </div>
             </div>
         </>
     );

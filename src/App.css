@@ -201,3 +201,29 @@ div {
     font-size: 1rem;
     font-family: 'Roboto', 'Arial', sans-serif;
 }
+
+/* Carousel */
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* 슬라이드 폭 설정 */
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    width: 300px; /* 슬라이드 폭 설정 */
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
