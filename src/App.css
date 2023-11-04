@@ -212,13 +212,14 @@ div {
 .slides {
     display: flex;
     overflow: hidden;
-    width: 300px; /* 슬라이드 폭 설정 */
+    width: 600px;
+    height: 400px;
     margin: 0 auto;
     position: relative;
 }
 
 .slide {
-    width: 300px; /* 슬라이드 폭 설정 */
+    width: 300px;
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s ease;
@@ -226,4 +227,13 @@ div {
 
 .slide.active {
     opacity: 1;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.carousel button {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 5px;
 }
