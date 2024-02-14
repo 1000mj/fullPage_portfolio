@@ -236,4 +236,14 @@ div {
     display: inline-block;
     font-size: 1.5rem;
     margin: 5px;
+    border: none;
+    background-color: inherit;
+    width: 50px;
+    transition: 0.5s;
+}
+.carousel button:first-child:hover {
+    transform: translateX(-10px);
+}
+.carousel button:nth-child(2):hover {
+    transform: translateX(10px);
 }

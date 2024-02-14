@@ -30,19 +30,14 @@ function SkillsApp() {
                 <div className="skill-element">
                     {selectedSkill === 'front-end' && (
                         <p>
-                            :HTML
+                            <img src="https://i.ibb.co/NKkTMyk/html.png" alt="" border="0" />
+                            <img src="https://i.ibb.co/wBHGJvq/css.png" alt="" border="0" />
+                            <img src="https://i.ibb.co/3CZGGQw/javascript.png" alt="javascript" border="0" />
+                            <img src="https://i.ibb.co/b2hV55B/react.png" alt="react" border="0" />
                             <br />
-                            :CSS
-                            <br />
-                            :JavaScript
-                            <br />
-                            :React
-                            <br />
-                            :Jquery
-                            <br />
-                            :Bootstrap
-                            <br />
-                            :Tailwindcss
+                            <img src="https://i.ibb.co/3SM58qq/jquery.png" alt="jquery" border="0" />
+                            <img src="https://i.ibb.co/RTCq2C0/bootstrap.png" alt="bootstrap" border="0" />
+                            <img src="https://i.ibb.co/3yCYTtV/tailwindcss.png" alt="tailwindcss" border="0" />
                         </p>
                     )}
                     {selectedSkill === 'learning' && (

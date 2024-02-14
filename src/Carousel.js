@@ -3,10 +3,10 @@ import './App.css'; // 스타일링을 위한 CSS 파일
 
 const Carousel = () => {
     const slides = [
-        'https://via.placeholder.com/600x400.png',
-        'https://via.placeholder.com/600x400/FF0000/FFFFFF.png',
-        'https://via.placeholder.com/600x400/0000FF/FFFFFF.png',
-        'https://via.placeholder.com/600x400/00FF00/FFFFFF.png',
+        'https://i.ibb.co/PNvBs55/weather.png',
+        'https://i.ibb.co/58MzNSL/Todo-List.png',
+        'https://i.ibb.co/PYC95Z1/1pp.png',
+        'https://i.ibb.co/g92gxFV/kakaobank.png',
         // 추가 이미지 경로 추가
     ];
 
