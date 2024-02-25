@@ -3,11 +3,22 @@ import './App.css'; // 스타일링을 위한 CSS 파일
 
 const Carousel = () => {
     const slides = [
-        'https://i.ibb.co/PNvBs55/weather.png',
-        'https://i.ibb.co/58MzNSL/Todo-List.png',
-        'https://i.ibb.co/PYC95Z1/1pp.png',
-        'https://i.ibb.co/g92gxFV/kakaobank.png',
-        // 추가 이미지 경로 추가
+        {
+            src: 'https://i.ibb.co/PNvBs55/weather.png',
+            title: 'Weather App',
+        },
+        {
+            src: 'https://i.ibb.co/58MzNSL/Todo-List.png',
+            title: 'Todo List',
+        },
+        {
+            src: 'https://i.ibb.co/PYC95Z1/1pp.png',
+            title: 'Portfolio',
+        },
+        {
+            src: 'https://i.ibb.co/g92gxFV/kakaobank.png',
+            title: 'KakaoBank Clone',
+        },
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,7 +36,8 @@ const Carousel = () => {
             <div className="slides">
                 {slides.map((slide, index) => (
                     <div key={index} className={index === currentSlide ? 'slide active' : 'slide'}>
-                        <img src={slide} alt={`Slide ${index + 1}`} />
+                        <img src={slide.src} alt={`Slide ${index + 1}`} />
+                        <p className="slide-title">{slide.title}</p>
                     </div>
                 ))}
             </div>

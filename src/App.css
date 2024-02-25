@@ -253,3 +253,15 @@ div {
 .carousel button:nth-child(2):hover {
     transform: translateX(10px);
 }
+
+.slide-title {
+    position: absolute;
+    top: 0;
+    left: 22%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
