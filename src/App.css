@@ -150,13 +150,6 @@ div {
 }
 .skill-element {
 }
-.skill-element p {
-    font-size: 1.5rem;
-    position: relative;
-    top: 0;
-    left: 90%;
-    transform: translateX(-50%) translateY(-50%);
-}
 
 .scroll-downs {
     position: relative;
@@ -202,6 +195,19 @@ div {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+.skills-img {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-img img {
+    max-width: 100px;
+    height: auto;
+}
 /* Carousel */
 .carousel {
     display: flex;
